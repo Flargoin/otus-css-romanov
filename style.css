@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Regular"),
+      url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+      url("/fonts/Roboto/Roboto-Regular.woff") format("woff"),
+      url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Medium"),
+      url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+      url("/fonts/Roboto/Roboto-Medium.woff") format("woff"),
+      url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+      local("Roboto-Bold"),
+      url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+      url("/fonts/Roboto/Roboto-Bold.woff") format("woff"),
+      url("/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%; /* 16px */
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote {
+    font-family: 'Bitter', sans-serif;
+}
+
+h1,
+h3 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem; /* 24px */
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 5.375rem;; /* 86px */
+}
+
+.logo {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    font-size: 5.375rem; /* 86px */
+}
+
+nav {
+    font-family: inherit;
+    font-size: 1.5rem; /* 24px */
+}
+
+nav .active {
+    text-decoration: underline;
+}
+
+.main-title {
+    font-size: 5.375rem; /* 86px */
+}
+
+.banner-text {
+    font-size: 1.25rem; /* 20px */
+}
+
+.position {
+    font-size: 1.125em; /* 18px */
+    color: #0D0D0D;
+}
+
+.biography-blockquote {
+    font-weight: 400;
+    font-size: 1.625rem; /* 26px */
+}
+
+.person {
+    font-weight: 700;
+}
+
+.person span {
+    font-weight: 400;
+}
+
+.contacts div {
+    font-weight: 700;
+}
+
+.contacts a {
+    font-weight: 400;
+}
+
+.testimonials-blockquote {
+    font-family: 'Bitter', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.strengths {
+    font-family: 'Bitter', sans-serif;
+    font-weight: 400;
+    font-size: 2.125rem;
+}
+
+/* В футере ещё белый текст, не стал указывать, так как его не будет видно в данный момент. */
+footer address a {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+footer address a:last-child {
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    font-size: 1.125rem;
+}
+
+.footer-logo span {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    font-weight: 400;
+}
