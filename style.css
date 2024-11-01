@@ -37,6 +37,7 @@
   }
 
 .page {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 100%; /* 16px */
     line-height: 1.2;
@@ -91,9 +92,7 @@
 /* Header START */
 .header {
     height: 135px;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
