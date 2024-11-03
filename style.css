@@ -218,8 +218,18 @@
 }
 
 .biography-blockquote {
+    position: relative;
     text-wrap: balance;
     font-size: 1.625rem; /* 26px */
+}
+
+.biography-blockquote::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    height: 6px;
+    background-color: #0D0D0D;
 }
 
 .testimonials-blockquote {
