@@ -234,6 +234,70 @@
 }
 /* Biography END */
 
+/* Designers START */
+
+    .designers {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .designers .section-title {
+        padding-left: 8.5rem;
+    }
+
+    .designers-list {
+        padding-left: 1.25rem;
+        display: flex;
+        align-items: flex-end;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .designers-item {
+        min-width: 335px;
+    }
+
+    .designers-item:first-child {
+        min-width: 572px;
+    }
+
+    .designers-item .img {
+        max-height: 440px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .designers-item:first-child .img{
+        max-height: 540px;
+    }
+
+    .designers-item:first-child .person-info {
+        margin-left: auto;
+        margin-right: 85px;
+    }
+
+    .person {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .person-info {
+        margin: 0;
+    }
+
+    .person-name {
+        text-transform: uppercase;
+    }
+
+    .person-text,
+    .person-skills {
+        margin: 0;
+    } 
+/* Desigers End */
+
 /* Testimonials START */
 .testimonials {
     max-width: 1400px;
