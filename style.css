@@ -36,6 +36,10 @@
     font-display: swap;
   }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 .page {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -485,4 +489,84 @@
 .footer-logo {
     font-weight: 900;
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Header Start */
+    .header {
+        height: 100px;
+    }
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .nav {
+        font-size: 1rem;
+    }
+    /* Header End */
+
+    /* Banner Start */
+    .banner-content {
+        width: auto;
+    }
+    /* Banner End */
+
+    /* Biography start */
+    .biography {
+        justify-content: center;
+    }
+
+    .biography .section-title {
+        padding-left: 2rem;
+        padding-right: 0.5rem;
+    }
+
+    .biography-body {
+        width: 35%;
+    }
+    /* Biography End */
+
+    /* Testimonials Start */
+    .testimonials {
+        gap: 30px;
+    }
+
+    .testimonials .section-title {
+        grid-column: 2/12;
+        justify-self: self-end;
+        writing-mode: unset;
+        transform: unset;
+        order: 1;
+    }
+
+    .testimonials-contacts {
+        padding: 0;
+        grid-column: 2/12;
+        flex-direction: unset;
+        justify-content: space-between;
+        order: 3;
+    }
+
+    .testimonials-photo {
+        display: none;
+    }
+
+    .testimonials-photo-small .img {
+        max-height: 532px;
+    }
+
+    .testimonials-contact {
+        writing-mode: unset;
+        transform: unset;
+        flex-direction: column;
+    }
+
+    .testimonials-body {
+        grid-column: 2/12;
+        justify-self: center;
+        order: 2;
+    }
+    /* Testimonials End */
+
 }
