@@ -40,6 +40,10 @@
     outline: 1px solid red;
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -47,6 +51,7 @@
     line-height: 1.2;
     font-weight: 500;
     color: #000;
+    box-sizing: border-box;
 }
 
 .regular {
@@ -197,6 +202,10 @@
     height: auto;
 }
 
+.biography-title {
+    max-width: 430px;
+}
+
 .biography-photo img {
     width: 100%;
     height: 100%;
@@ -220,6 +229,10 @@
     gap: 9px;
     flex-wrap: wrap;
     font-size: 1.125rem;
+}
+
+.biography-position-skill:not(:last-child)::after {
+    content: ' /';
 }
 
 .biography-blockquote {
@@ -526,7 +539,9 @@
         width: 35%;
     }
     /* Biography End */
+}
 
+@media screen and (max-width: 1024px) {
     /* Testimonials Start */
     .testimonials {
         gap: 30px;
@@ -568,5 +583,188 @@
         order: 2;
     }
     /* Testimonials End */
+}
+
+@media screen and (max-width: 767px) {
+    /* Other START*/
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .title-lg {
+        font-weight: 400;
+        font-size: 4.375rem;
+    }
+    /* Other END */
+
+    /* Header START */
+    .header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #fff;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        z-index: 1;
+    }
+
+    .header .logo {
+       display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        justify-content: space-evenly;
+    }
+
+    .nav-list-link {
+        font-size: 0;
+    }
+
+    .nav-list-link::after {
+        font-family: "Bitter", sans-serif;
+        font-size: 30px;
+    }
+
+    .nav-list-link[href="#biography"]::after {
+        content: 'B';
+    }
+
+
+    .nav-list-link[href="#designers"]::after {
+        content: 'D';
+    }
+
+    .nav-list-link[href="#testimonials"]::after {
+        content: 'T';
+    }
+
+    .nav-list-link[href="#strong-points"]::after {
+        content: 'S';
+    }
+
+    /* Header END */
+
+    /* Banner START */
+    .banner {
+        padding: 0;
+        align-items: flex-start;
+        height: calc(100dvh - 82px);
+        background-image: url('/img/banner-mob.png');
+    }
+
+    .banner-content {
+        max-width: unset;
+        min-height: 50%;
+        padding: 0.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.125rem;
+    }
+    /* Banner END */
+
+    /* Biography START */
+    .biography {
+        padding-top: 5rem;
+        position: relative;
+        justify-content: unset;
+        flex-direction: column-reverse;
+    }
+
+    .biography-head {
+        width: 100%;
+    }
+
+    .biography-body {
+        padding: 0 15px;
+        width: auto;
+        max-width: 100%;
+        gap: 3.125rem;
+        margin-bottom: 2.1875rem;
+    }
+
+    .biography .section-title {
+        position: absolute;
+        top: calc(5rem - 30px);
+        right: 15px;
+        padding: 0;
+        writing-mode: unset;
+        transform: unset;
+    }
+
+    .biography-title {
+        position: relative;
+        font-size: 4rem;
+        max-width: unset;
+        order: 3;
+        padding-left: 2.1875rem;
+    }
+
+    .biography-title::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+    }
+
+    .biography-position-head {
+        order: 1;
+    }
+
+    .biography-photo {
+        width: 100%;
+    }
+
+    .biography-blockquote {
+        order: 2;
+        font-weight: 300;
+        font-size: 1.875rem;
+    }
+
+    .biography-blockquote::before {
+        display: none;
+    }
+
+    .biography-position-skills {
+        position: relative;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+
+    .biography-position-skill:not(:last-child)::after {
+        display: none;
+    }
+
+    .biography-position-skill::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+    }
+    /* Biography END */
+
+    /* Designers START */
+    .designers-item {
+        min-width: 310px;
+    }
+
+    .designers-item:first-child {
+        min-width: 310px;
+    }
+
+    .designers-item .img {
+        min-height: 440px;
+    }
+
+    .designers-item:first-child .person-info {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    /* Designers END */
+
 
 }

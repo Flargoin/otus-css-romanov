@@ -23,10 +23,10 @@
                     <a class="link nav-list-link active" href="#designers">Designers</a>
                 </li>
                 <li class="nav-list-item">
-                    <a class="link nav-list-link" href="#testimonals">Testimonials</a>
+                    <a class="link nav-list-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-list-item">
-                    <a class="link nav-list-link" href="#strong">Strong points</a>
+                    <a class="link nav-list-link" href="#strong-points">Strong points</a>
                 </li>
             </ul>
         </nav>
@@ -44,10 +44,13 @@
         <!-- Баннер END -->
 
         <!-- Секция Биографии START -->
-        <section class="section biography">
+        <section id="biography" class="section biography">
             <div class="biography-head">
                 <div class="biography-photo">
-                    <img class="img" src="/img/biography-photo.jpg" alt="Biography block photo">
+                    <picture>
+                        <source srcset="/img/biography-mob.png" type="image/webp" media="(max-width: 767px)">
+                        <img class="img" src="/img/biography-photo.jpg" alt="Biography block photo">
+                    </picture>
                 </div> 
             </div>
             
@@ -55,15 +58,15 @@
 
             <div class="biography-body">
                 <h3 class="title title-lg biography-title">
-                    Katya <br> Mills
+                    Katya Mills
                 </h3>
 
                 <div class="biography-position-head">
                     <div class="biography-position">Art Director</div>
                     <ul class="list biography-position-skills">
-                        <li class="biography-position-skill">Scenography/</li>
-                        <li class="biography-position-skill">Styling/</li>
-                        <li class="biography-position-skill">Creative Photography/</li>
+                        <li class="biography-position-skill">Scenography</li>
+                        <li class="biography-position-skill">Styling</li>
+                        <li class="biography-position-skill">Creative Photography</li>
                         <li class="biography-position-skill">Design</li>
                     </ul>
                 </div>
@@ -76,14 +79,17 @@
         <!-- Секция Биографии END -->
 
         <!-- Секция Дизайнеров START -->
-        <section class="section designers">
+        <section id="designers" class="section designers">
             <h2 class="bold title section-title">Designers</h2>
 
             <ul class="list designers-list">
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-jess.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers1-mob.png" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-jess.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -97,7 +103,10 @@
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -111,7 +120,10 @@
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-louisse.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers3-mob.jpg" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-louisse.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -125,7 +137,10 @@
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -139,7 +154,10 @@
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -153,7 +171,10 @@
                 <li class="designers-item">
                     <article class="bold person">
                         <div class="person-photo">
-                            <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            <picture>
+                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
+                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                            </picture>
                         </div>
         
                         <dl class="person-info">
@@ -168,7 +189,7 @@
         <!-- Секция Дизайнеров END -->
         
         <!-- Секция Testimonials START -->
-        <section class="section testimonials">
+        <section id="testimonials" class="section testimonials">
             <ul class="list testimonials-contacts">
                 <li class="testimonials-contact">
                     <div class="bold testimonials-contact-name">Creativity</div>
@@ -185,6 +206,9 @@
             </ul>
             
             <div class="testimonials-photo">
+                <picture>
+                    <source srcset="/img/testimonials-mob.png" media="(max-width: 1024px)">
+                </picture>
                 <img class="img" src="/img/testimonials-photo.jpg" alt="Testimonials block photo">
             </div>
             
@@ -203,7 +227,7 @@
         <!-- Секция Testimonials END -->
 
         <!-- Секция Strong points START -->
-        <section class="section strong-points">
+<!--         <section id="strong-points" class="section strong-points">
             <h2 class="bold title section-title">Strong points</h2>
 
             <ul class="list strong-points-list">
@@ -238,12 +262,12 @@
                     <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
                 </li>
             </ul>
-        </section>
+        </section> -->
         <!-- Секция Strong points END -->
     </main>
 
     <!-- Footer START -->
-    <footer class="footer">
+<!--     <footer class="footer">
         <address class="column footer-contacts">
             <a class="link regular footer-link" href="tel:+79211234567">+7 921 123-45-67</a>
             <a class="link regular footer-link" href="mailto:info@modstudio.com">info@modstudio.com</a>
@@ -258,7 +282,7 @@
         <div class="regular column copyright">
             <p>© 2023 Mod Media. All rights reserved</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer END -->
 </body>
 </html>
