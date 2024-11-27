@@ -587,23 +587,35 @@ html {
 
 @media screen and (max-width: 767px) {
     /* Other START*/
+    .sticky-content {
+        position: relative;
+    }
+
     .section {
         padding: 2.5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.125rem;
     }
 
     .title-lg {
         font-weight: 400;
         font-size: 4.375rem;
     }
+
+    .section:last-child {
+        padding-bottom: 15.125rem;
+    }
     /* Other END */
 
     /* Header START */
     .header {
-        position: fixed;
-        bottom: 0;
+        position: sticky;
+        top: calc(100% - 75px);
         left: 0;
         right: 0;
-        height: 80px;
+        height: 75px;
         background-color: #fff;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
@@ -653,14 +665,15 @@ html {
     /* Banner START */
     .banner {
         padding: 0;
+        margin-top: -4.6875rem;
         align-items: flex-start;
-        height: calc(100dvh - 82px);
+        height: calc(100dvh - 75px);
         background-image: url('/img/banner-mob.png');
     }
 
     .banner-content {
         max-width: unset;
-        min-height: 50%;
+        min-height: 46%;
         padding: 0.5rem;
     }
 
@@ -682,17 +695,17 @@ html {
     }
 
     .biography-body {
-        padding: 0 15px;
+        padding: 0 1rem;
         width: auto;
         max-width: 100%;
-        gap: 3.125rem;
+        gap: 3.5rem;
         margin-bottom: 2.1875rem;
     }
 
     .biography .section-title {
         position: absolute;
-        top: calc(5rem - 30px);
-        right: 15px;
+        top: 5rem;
+        right: 1.5rem;
         padding: 0;
         writing-mode: unset;
         transform: unset;
@@ -732,7 +745,8 @@ html {
 
     .biography-position-skills {
         position: relative;
-        padding-left: 10px;
+        gap: 0;
+        padding-left: 15px;
         flex-direction: column;
     }
 
@@ -767,4 +781,48 @@ html {
     /* Designers END */
 
 
+    /* Testimonials START */
+    .strong-points-list {
+        grid-template-columns: minmax(200px, 310px) minmax(310px, 24%) minmax(310px, 24%) minmax(310px, 24%);
+        grid-auto-columns: minmax(310px, 24%);
+    }
+
+    .testimonials-contacts {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    /* Testimonials END */
+
+    /* Strong-points START */
+    .strong-points .title-lg {
+        font-size: 2.875rem;
+    }
+
+    .strong-points-item {
+        min-width: 310px;
+    }
+
+    .strong-points-item-lg {
+        order: -1;
+        justify-content: unset;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    .strong-points-item .img {
+        height: 450px;
+    }
+
+    .strengths {
+        justify-content: unset;
+        grid-auto-rows: 29px;
+        gap: 0.5rem;
+    }
+
+    .strengths-item {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    /* Strong-points END */
 }

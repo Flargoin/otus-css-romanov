@@ -10,264 +10,266 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page">
-    <!-- Шапка страницы START -->
-    <header class="header">
-        <a class="link logo" href="/">Mod</a>
+    <div class="sticky-content">
+        <!-- Шапка страницы START -->
+        <header class="header">
+            <a class="link logo" href="/">Mod</a>
 
-        <nav class="nav">
-            <ul class="list nav-list">
-                <li class="nav-list-item">
-                    <a class="link nav-list-link" href="#biography">Biography</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="link nav-list-link active" href="#designers">Designers</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="link nav-list-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="link nav-list-link" href="#strong-points">Strong points</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Шапка страницы END -->
+            <nav class="nav">
+                <ul class="list nav-list">
+                    <li class="nav-list-item">
+                        <a class="link nav-list-link" href="#biography">Biography</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="link nav-list-link active" href="#designers">Designers</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="link nav-list-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="link nav-list-link" href="#strong-points">Strong points</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Шапка страницы END -->
 
-    <main class="main">
-        <!-- Баннер START -->
-        <section class="section banner">
-            <div class="banner-content">
-                <h1 class="title title-lg banner-title">Mod Studio</h1>
-                <p class="banner-text">Modern Web Studio</p>
-            </div>
-        </section>
-        <!-- Баннер END -->
+        <main class="main">
+            <!-- Баннер START -->
+            <section class="section banner">
+                <div class="banner-content">
+                    <h1 class="title title-lg banner-title">Mod Studio</h1>
+                    <p class="banner-text">Modern Web Studio</p>
+                </div>
+            </section>
+            <!-- Баннер END -->
 
-        <!-- Секция Биографии START -->
-        <section id="biography" class="section biography">
-            <div class="biography-head">
-                <div class="biography-photo">
+            <!-- Секция Биографии START -->
+            <section id="biography" class="section biography">
+                <div class="biography-head">
+                    <div class="biography-photo">
+                        <picture>
+                            <source srcset="/img/biography-mob.png" type="image/webp" media="(max-width: 767px)">
+                            <img class="img" src="/img/biography-photo.jpg" alt="Biography block photo">
+                        </picture>
+                    </div> 
+                </div>
+                
+                <h2 class="bold title section-title">Biography</h2>
+
+                <div class="biography-body">
+                    <h3 class="title title-lg biography-title">
+                        Katya Mills
+                    </h3>
+
+                    <div class="biography-position-head">
+                        <div class="biography-position">Art Director</div>
+                        <ul class="list biography-position-skills">
+                            <li class="biography-position-skill">Scenography</li>
+                            <li class="biography-position-skill">Styling</li>
+                            <li class="biography-position-skill">Creative Photography</li>
+                            <li class="biography-position-skill">Design</li>
+                        </ul>
+                    </div>
+        
+                    <blockquote class="blockquote regular biography-blockquote">
+                        <p class="phrase">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</p>
+                    </blockquote>
+                </div>
+            </section>
+            <!-- Секция Биографии END -->
+
+            <!-- Секция Дизайнеров START -->
+            <section id="designers" class="section designers">
+                <h2 class="bold title section-title">Designers</h2>
+
+                <ul class="list designers-list">
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-jess-mob.jpg" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-jess.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Jess Wonder</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+        
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-kameron-mob.png" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Kameron Clein</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+        
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-louisse-mob.png" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-louisse.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Louisse Red</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+        
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-kameron-mob.png" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Kameron Clein</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-kameron-mob.png" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Kameron Clein</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+
+                    <li class="designers-item">
+                        <article class="bold person">
+                            <div class="person-photo">
+                                <picture>
+                                    <source srcset="/img/designers/designers-kameron-mob.png" media="(max-width: 767px)">
+                                    <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
+                                </picture>
+                            </div>
+            
+                            <dl class="person-info">
+                                <dt class="person-name">Kameron Clein</dt>
+                                <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
+                                <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
+                            </dl>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!-- Секция Дизайнеров END -->
+            
+            <!-- Секция Testimonials START -->
+            <section id="testimonials" class="section testimonials">
+                <ul class="list testimonials-contacts">
+                    <li class="testimonials-contact">
+                        <div class="bold testimonials-contact-name">Creativity</div>
+                        <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
+                    </li>
+                    <li class="testimonials-contact">
+                        <div class="bold testimonials-contact-name">Creativity</div>
+                        <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
+                    </li>
+                    <li class="testimonials-contact">
+                        <div class="bold testimonials-contact-name">Website</div>
+                        <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
+                    </li>
+                </ul>
+                
+                <div class="testimonials-photo">
                     <picture>
-                        <source srcset="/img/biography-mob.png" type="image/webp" media="(max-width: 767px)">
-                        <img class="img" src="/img/biography-photo.jpg" alt="Biography block photo">
+                        <source srcset="/img/testimonials-mob.png" media="(max-width: 1024px)">
                     </picture>
-                </div> 
-            </div>
-            
-            <h2 class="bold title section-title">Biography</h2>
-
-            <div class="biography-body">
-                <h3 class="title title-lg biography-title">
-                    Katya Mills
-                </h3>
-
-                <div class="biography-position-head">
-                    <div class="biography-position">Art Director</div>
-                    <ul class="list biography-position-skills">
-                        <li class="biography-position-skill">Scenography</li>
-                        <li class="biography-position-skill">Styling</li>
-                        <li class="biography-position-skill">Creative Photography</li>
-                        <li class="biography-position-skill">Design</li>
-                    </ul>
+                    <img class="img" src="/img/testimonials-photo.jpg" alt="Testimonials block photo">
                 </div>
-    
-                <blockquote class="blockquote regular biography-blockquote">
-                    <p class="phrase">“The more I deal with the work as something that is my own,  as something that is personal, the more successful it is.”</p>
-                </blockquote>
-            </div>
-        </section>
-        <!-- Секция Биографии END -->
-
-        <!-- Секция Дизайнеров START -->
-        <section id="designers" class="section designers">
-            <h2 class="bold title section-title">Designers</h2>
-
-            <ul class="list designers-list">
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers1-mob.png" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-jess.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Jess Wonder</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-    
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Kameron Clein</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-    
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers3-mob.jpg" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-louisse.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Louisse Red</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-    
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Kameron Clein</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Kameron Clein</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-
-                <li class="designers-item">
-                    <article class="bold person">
-                        <div class="person-photo">
-                            <picture>
-                                <source srcset="/img/designers/designers2-mob.png" media="(max-width: 767px)">
-                                <img class="img" src="/img/designers/designer-kameron.jpg" alt="Designer Jess Wonder photo">
-                            </picture>
-                        </div>
-        
-                        <dl class="person-info">
-                            <dt class="person-name">Kameron Clein</dt>
-                            <dd class="person-text">From/ <span class="regular">Be more flower</span></dd>
-                            <dd class="person-skills">Skills/ <span class="regular">Design Strategy / Marketing</span></dd>
-                        </dl>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <!-- Секция Дизайнеров END -->
-        
-        <!-- Секция Testimonials START -->
-        <section id="testimonials" class="section testimonials">
-            <ul class="list testimonials-contacts">
-                <li class="testimonials-contact">
-                    <div class="bold testimonials-contact-name">Creativity</div>
-                    <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
-                </li>
-                <li class="testimonials-contact">
-                    <div class="bold testimonials-contact-name">Creativity</div>
-                    <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
-                </li>
-                <li class="testimonials-contact">
-                    <div class="bold testimonials-contact-name">Website</div>
-                    <a class="link regular testimonials-contact-link" href="www.whitepapers.com">www.whitepapers.com</a>
-                </li>
-            </ul>
-            
-            <div class="testimonials-photo">
-                <picture>
-                    <source srcset="/img/testimonials-mob.png" media="(max-width: 1024px)">
-                </picture>
-                <img class="img" src="/img/testimonials-photo.jpg" alt="Testimonials block photo">
-            </div>
-            
-            <h2 class="bold title section-title">Testimonials</h2>
-            
-            <div class="testimonials-body">
-                <blockquote class="blockquote regular testimonials-blockquote">
-                    <p class="phrase">I just really want to do good work and work with some great people, people who challenge me.</p>
-                </blockquote>
-            
-                <div class="testimonials-photo-small">
-                    <img class="img" src="img/testimonials-photo2.jpg" alt="Testimonials block photo #2">
+                
+                <h2 class="bold title section-title">Testimonials</h2>
+                
+                <div class="testimonials-body">
+                    <blockquote class="blockquote regular testimonials-blockquote">
+                        <p class="phrase">I just really want to do good work and work with some great people, people who challenge me.</p>
+                    </blockquote>
+                
+                    <div class="testimonials-photo-small">
+                        <img class="img" src="img/testimonials-photo2.jpg" alt="Testimonials block photo #2">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Секция Testimonials END -->
+            </section>
+            <!-- Секция Testimonials END -->
 
-        <!-- Секция Strong points START -->
-<!--         <section id="strong-points" class="section strong-points">
-            <h2 class="bold title section-title">Strong points</h2>
+            <!-- Секция Strong points START -->
+            <section id="strong-points" class="section strong-points">
+                <h2 class="bold title section-title">Strong points</h2>
 
-            <ul class="list strong-points-list">
-                <li class="strong-points-item">
-                    <img class="img" src="/img/strong-points/strong-points1.jpg" alt="">
-                </li>
-                <li class="strong-points-item">
-                    <img class="img" src="/img/strong-points/strong-points2.jpg" alt="">
-                </li>
-                <li class="strong-points-item strong-points-item-lg">
-                    <h3 class="title title-lg">Strengths</h3>
-                    <ul class="list regular strengths">
-                        <li class="strengths-item">Interiors</li>
-                        <li class="strengths-item">Outdoors</li>
-                        <li class="strengths-item">Portraits</li>
-                        <li class="strengths-item">Styling</li>
-                        <li class="strengths-item">Events</li>
-                        <li class="strengths-item">Architecture</li>
-                        <li class="strengths-item">Design</li>
-                        <li class="strengths-item">Celebrations</li>
-                        <li class="strengths-item">Fashion</li>
-                        <li class="strengths-item">Nature</li>
-                    </ul>
-                </li>
-                <li class="strong-points-item">
-                    <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
-                </li>
-                <li class="strong-points-item">
-                    <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
-                </li>
-                <li class="strong-points-item">
-                    <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
-                </li>
-            </ul>
-        </section> -->
-        <!-- Секция Strong points END -->
-    </main>
+                <ul class="list strong-points-list">
+                    <li class="strong-points-item">
+                        <img class="img" src="/img/strong-points/strong-points1.jpg" alt="">
+                    </li>
+                    <li class="strong-points-item">
+                        <img class="img" src="/img/strong-points/strong-points2.jpg" alt="">
+                    </li>
+                    <li class="strong-points-item strong-points-item-lg">
+                        <h3 class="title title-lg">Strengths</h3>
+                        <ul class="list regular strengths">
+                            <li class="strengths-item">Interiors</li>
+                            <li class="strengths-item">Outdoors</li>
+                            <li class="strengths-item">Portraits</li>
+                            <li class="strengths-item">Styling</li>
+                            <li class="strengths-item">Events</li>
+                            <li class="strengths-item">Architecture</li>
+                            <li class="strengths-item">Design</li>
+                            <li class="strengths-item">Celebrations</li>
+                            <li class="strengths-item">Fashion</li>
+                            <li class="strengths-item">Nature</li>
+                        </ul>
+                    </li>
+                    <li class="strong-points-item">
+                        <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
+                    </li>
+                    <li class="strong-points-item">
+                        <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
+                    </li>
+                    <li class="strong-points-item">
+                        <img class="img" src="/img/strong-points/strong-points3.jpg" alt="">
+                    </li>
+                </ul>
+            </section>
+            <!-- Секция Strong points END -->
+        </main>
+    </div>
 
     <!-- Footer START -->
-<!--     <footer class="footer">
+    <footer class="footer">
         <address class="column footer-contacts">
             <a class="link regular footer-link" href="tel:+79211234567">+7 921 123-45-67</a>
             <a class="link regular footer-link" href="mailto:info@modstudio.com">info@modstudio.com</a>
@@ -282,7 +284,7 @@
         <div class="regular column copyright">
             <p>© 2023 Mod Media. All rights reserved</p>
         </div>
-    </footer> -->
+    </footer>
     <!-- Footer END -->
 </body>
 </html>
