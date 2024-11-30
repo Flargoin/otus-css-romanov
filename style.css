@@ -44,6 +44,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    margin: 0;
+}
+
 .page {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -487,8 +491,13 @@ html {
     gap: 5px;
 }
 
+.footer-product {
+    font-family: "Roboto", sans-serif;
+}
+
 .footer-link {
     text-decoration: underline;
+    font-style: normal;
 }
 
 .footer-link:last-child {
@@ -568,7 +577,8 @@ html {
     }
 
     .testimonials-photo-small .img {
-        max-height: 532px;
+        max-width: 415px;
+        max-height: 330px;
     }
 
     .testimonials-contact {
@@ -825,4 +835,31 @@ html {
         padding-left: 1rem;
     }
     /* Strong-points END */
+
+    /* Footer START */
+    .footer {
+        height: auto;
+        padding-top: 2.8125rem;
+        padding-bottom: 2.8125rem;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .footer .column {
+        width: 100%;
+    }
+    
+    .footer-product {
+        order: -1;
+        text-align: right;
+    }
+    /* Footer END */
+
+}
+
+@media screen and (max-width: 450px) {
+    .testimonials-contacts {
+        justify-content: center;
+        text-align: center;
+    }
 }
