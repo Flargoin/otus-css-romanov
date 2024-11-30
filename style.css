@@ -40,6 +40,14 @@
     outline: 1px solid red;
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    margin: 0;
+}
+
 .page {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -47,6 +55,7 @@
     line-height: 1.2;
     font-weight: 500;
     color: #000;
+    box-sizing: border-box;
 }
 
 .regular {
@@ -197,6 +206,10 @@
     height: auto;
 }
 
+.biography-title {
+    max-width: 430px;
+}
+
 .biography-photo img {
     width: 100%;
     height: 100%;
@@ -220,6 +233,10 @@
     gap: 9px;
     flex-wrap: wrap;
     font-size: 1.125rem;
+}
+
+.biography-position-skill:not(:last-child)::after {
+    content: ' /';
 }
 
 .biography-blockquote {
@@ -474,8 +491,13 @@
     gap: 5px;
 }
 
+.footer-product {
+    font-family: "Roboto", sans-serif;
+}
+
 .footer-link {
     text-decoration: underline;
+    font-style: normal;
 }
 
 .footer-link:last-child {
@@ -526,7 +548,9 @@
         width: 35%;
     }
     /* Biography End */
+}
 
+@media screen and (max-width: 1024px) {
     /* Testimonials Start */
     .testimonials {
         gap: 30px;
@@ -553,7 +577,8 @@
     }
 
     .testimonials-photo-small .img {
-        max-height: 532px;
+        max-width: 415px;
+        max-height: 330px;
     }
 
     .testimonials-contact {
@@ -568,5 +593,273 @@
         order: 2;
     }
     /* Testimonials End */
+}
 
+@media screen and (max-width: 767px) {
+    /* Other START*/
+    .sticky-content {
+        position: relative;
+    }
+
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.125rem;
+    }
+
+    .title-lg {
+        font-weight: 400;
+        font-size: 4.375rem;
+    }
+
+    .section:last-child {
+        padding-bottom: 15.125rem;
+    }
+    /* Other END */
+
+    /* Header START */
+    .header {
+        position: sticky;
+        top: calc(100% - 75px);
+        left: 0;
+        right: 0;
+        height: 75px;
+        background-color: #fff;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        z-index: 1;
+    }
+
+    .header .logo {
+       display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        justify-content: space-evenly;
+    }
+
+    .nav-list-link {
+        font-size: 0;
+    }
+
+    .nav-list-link::after {
+        font-family: "Bitter", sans-serif;
+        font-size: 30px;
+    }
+
+    .nav-list-link[href="#biography"]::after {
+        content: 'B';
+    }
+
+
+    .nav-list-link[href="#designers"]::after {
+        content: 'D';
+    }
+
+    .nav-list-link[href="#testimonials"]::after {
+        content: 'T';
+    }
+
+    .nav-list-link[href="#strong-points"]::after {
+        content: 'S';
+    }
+
+    /* Header END */
+
+    /* Banner START */
+    .banner {
+        padding: 0;
+        margin-top: -4.6875rem;
+        align-items: flex-start;
+        height: calc(100dvh - 75px);
+        background-image: url('/img/banner-mob.png');
+    }
+
+    .banner-content {
+        max-width: unset;
+        min-height: 46%;
+        padding: 0.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.125rem;
+    }
+    /* Banner END */
+
+    /* Biography START */
+    .biography {
+        padding-top: 5rem;
+        position: relative;
+        justify-content: unset;
+        flex-direction: column-reverse;
+    }
+
+    .biography-head {
+        width: 100%;
+    }
+
+    .biography-body {
+        padding: 0 1rem;
+        width: auto;
+        max-width: 100%;
+        gap: 3.5rem;
+        margin-bottom: 2.1875rem;
+    }
+
+    .biography .section-title {
+        position: absolute;
+        top: 5rem;
+        right: 1.5rem;
+        padding: 0;
+        writing-mode: unset;
+        transform: unset;
+    }
+
+    .biography-title {
+        position: relative;
+        font-size: 4rem;
+        max-width: unset;
+        order: 3;
+        padding-left: 2.1875rem;
+    }
+
+    .biography-title::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+    }
+
+    .biography-position-head {
+        order: 1;
+    }
+
+    .biography-photo {
+        width: 100%;
+    }
+
+    .biography-blockquote {
+        order: 2;
+        font-weight: 300;
+        font-size: 1.875rem;
+    }
+
+    .biography-blockquote::before {
+        display: none;
+    }
+
+    .biography-position-skills {
+        position: relative;
+        gap: 0;
+        padding-left: 15px;
+        flex-direction: column;
+    }
+
+    .biography-position-skill:not(:last-child)::after {
+        display: none;
+    }
+
+    .biography-position-skill::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+    }
+    /* Biography END */
+
+    /* Designers START */
+    .designers-item {
+        min-width: 310px;
+    }
+
+    .designers-item:first-child {
+        min-width: 310px;
+    }
+
+    .designers-item .img {
+        min-height: 440px;
+    }
+
+    .designers-item:first-child .person-info {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    /* Designers END */
+
+
+    /* Testimonials START */
+    .strong-points-list {
+        grid-template-columns: minmax(200px, 310px) minmax(310px, 24%) minmax(310px, 24%) minmax(310px, 24%);
+        grid-auto-columns: minmax(310px, 24%);
+    }
+
+    .testimonials-contacts {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    /* Testimonials END */
+
+    /* Strong-points START */
+    .strong-points .title-lg {
+        font-size: 2.875rem;
+    }
+
+    .strong-points-item {
+        min-width: 310px;
+    }
+
+    .strong-points-item-lg {
+        order: -1;
+        justify-content: unset;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    .strong-points-item .img {
+        height: 450px;
+    }
+
+    .strengths {
+        justify-content: unset;
+        grid-auto-rows: 29px;
+        gap: 0.5rem;
+    }
+
+    .strengths-item {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    /* Strong-points END */
+
+    /* Footer START */
+    .footer {
+        height: auto;
+        padding-top: 2.8125rem;
+        padding-bottom: 2.8125rem;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .footer .column {
+        width: 100%;
+    }
+    
+    .footer-product {
+        order: -1;
+        text-align: right;
+    }
+    /* Footer END */
+
+}
+
+@media screen and (max-width: 450px) {
+    .testimonials-contacts {
+        justify-content: center;
+        text-align: center;
+    }
 }
