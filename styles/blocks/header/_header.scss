@@ -1,0 +1,11 @@
+
+.header {
+    height: 135px;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@import '_logo';
+@import '_nav';

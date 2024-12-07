@@ -1,0 +1,12 @@
+/* Basic styles */
+@import '_settings';
+
+/* Blocks styles */
+@import './blocks/header/_header';
+@import './blocks/banner/_banner';
+@import './blocks/biography/_biography';
+@import './blocks/designers/designers';
+@import './blocks/testimonials/_testimonials';
+@import './blocks/strong-points/_strong-points';
+@import './blocks/footer/_footer';
+@import './media';
