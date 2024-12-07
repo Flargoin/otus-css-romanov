@@ -1,0 +1,17 @@
+.strengths {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: 'Bitter', sans-serif;
+    font-size: 2.125rem;
+    font-weight: 400;
+}
+
+@supports(display: grid) {
+    .strengths {
+        display: grid;
+        justify-content: center;
+        grid-auto-rows: 42px;
+        gap: 0;
+    }
+}

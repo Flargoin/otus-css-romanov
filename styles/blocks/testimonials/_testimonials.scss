@@ -1,0 +1,44 @@
+@import '_contacts';
+
+.testimonials {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+    & .section__title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__photo {
+        max-width: 450px;
+        grid-column: span 4;
+
+        img {
+            @extend .image;
+        }
+    }
+
+    &__body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        gap: 35px;
+        grid-column: 9/11;
+
+        &-blockquote {
+            font-size: 2rem; /* 32px */
+        }
+
+        &-photo img {
+           width: 100%;
+           object-fit: cover;
+        }
+    }
+}
