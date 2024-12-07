@@ -1,0 +1,17 @@
+.position {
+    font-size: 1.125em; /* 18px */
+    color: #0D0D0D;
+
+    &__list {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        font-size: 1.125rem;
+
+        &-item {
+            &:not(:last-child)::after {
+                content: '/';
+            }
+        }
+    }
+}

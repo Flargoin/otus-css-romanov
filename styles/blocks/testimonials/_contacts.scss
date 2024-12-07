@@ -1,0 +1,22 @@
+.contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-column: 2 / 3;
+    justify-items: end;
+    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-right: 15px;
+
+    &__item {
+        @extend .vertical;
+        text-align: left;
+        display: flex;
+        flex-direction: column-reverse;
+
+        &-link {
+            font-weight: 400;
+        }
+    }
+}
