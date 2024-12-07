@@ -1,0 +1,13 @@
+.section {
+    padding: $section-padding-desc;
+
+    &__title {
+        font-size: 1.5rem; /* 24px */
+        font-weight: 700;
+
+        &_vertical {
+            @extend .vertical;
+            text-align: right;
+        }
+    }
+}

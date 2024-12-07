@@ -1,0 +1,43 @@
+.designers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & .section__title {
+        padding-left: 8.5rem;
+    }
+
+    &__list {
+        padding-left: 1.25rem;
+        display: flex;
+        align-items: flex-end;
+        overflow-x: auto;
+        gap: 20px;
+
+        &-item {
+            min-width: 335px;
+
+            & .img {
+                max-height: 440px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &:first-child {
+                min-width: 572px;
+
+                & .person__info {
+                    margin-left: auto;
+                    margin-right: 85px;
+                }
+
+                .img{
+                    max-height: 540px;
+                }
+            }
+        }
+    }
+}
+
+@import '_person';

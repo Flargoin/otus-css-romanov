@@ -1,0 +1,53 @@
+/* Biograpgy START */
+.biography {
+    padding-top: 9.375rem;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__head {
+        display: flex;
+        width: 49%;
+        height: auto;
+
+        &-photo {
+             img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__body {
+        margin: auto 0;
+        margin-left: 3.125rem;
+        width: 39%;
+        display: flex;
+        flex-direction: column;
+        gap: 3.3rem;
+
+        &-title {
+            max-width: 430px;
+        }
+
+        &-blockquote {
+            position: relative;
+            text-wrap: balance;
+            font-size: 1.625rem; /* 26px */
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                width: 20px;
+                height: 6px;
+                background-color: $site-secondary-color;
+            }
+        }
+    }
+}
+
+@import './_position';
