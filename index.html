@@ -31,6 +31,10 @@
                     </li>
                 </ul>
             </nav>
+
+            <button class="header__trigger button" onclick="window.modal.showModal()">
+                <img src="./icons/form-ico.svg" alt="Кнопка вызова модального окна">
+            </button>
         </header>
         <!-- Шапка страницы END -->
 
@@ -286,5 +290,25 @@
         </div>
     </footer>
     <!-- Footer END -->
+
+    <!-- Modal START -->
+    <dialog 
+        id="modal"
+        class="modal"
+    >
+        <form action="" class="form">
+            <h3 class="modal__title title">Get in touch</h3>
+
+            <p class="p">
+                Do you have any questions? Have something to say?
+                Don't be shy, write to us:
+            </p>
+
+            <div class="modal__triggers">
+                <button class="modal__button button" type="button" onclick="window.modal.close()">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <!-- Modal END -->
 </body>
 </html>

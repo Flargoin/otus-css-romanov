@@ -1,6 +1,8 @@
 .nav {
     font-family: inherit;
     font-size: 1.5rem; /* 24px */
+    margin-left: auto;
+    margin-right: 1.25rem;
 
     &__list {
         display: flex;
