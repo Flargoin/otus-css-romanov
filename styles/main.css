@@ -1,5 +1,15 @@
 /* Basic styles */
+/* Main colors */
+/* Main site vars */
 /* 16px */
+/* Section vars */
+/* Modal vars */
+/* Input vars */
+/* label var */
+/* textarea var */
+/* Form vars */
+/* Buttons vars */
+/* transition var */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900");
 @font-face {
   font-family: "Roboto";
@@ -53,12 +63,6 @@
      object-fit: cover;
 }
 
-.button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .link {
   text-decoration: none;
   color: inherit;
@@ -104,6 +108,49 @@
   font-size: 5.375rem; /* 86px */
 }
 
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 1.125rem;
+  padding: 0.6875rem 0;
+  border-radius: 0.5rem;
+  min-width: 13.125rem;
+  transition: all 0.4s ease-in-out;
+}
+.button_inline {
+  border: 1px solid #B3B3B3;
+  color: #000000;
+}
+@media (hover: hover) {
+  .button_inline:hover {
+    border: 1px solid #000000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  }
+}
+.button_dark {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .button_dark:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.button_ico {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (hover: hover) {
+  .button_ico:hover {
+    transform: scale(0.8);
+  }
+}
+
 /* Blocks styles */
 .header {
   height: 135px;
@@ -130,8 +177,13 @@
   align-items: center;
   gap: 55px;
 }
-.nav__list-link:active, .nav__list-link:hover {
+.nav__list-link:active {
   text-decoration: underline;
+}
+@media (hover: hover) {
+  .nav__list-link:hover {
+    text-decoration: none;
+  }
 }
 
 .banner {
@@ -445,40 +497,56 @@
 }
 
 .modal {
+  flex-direction: column;
   border: none;
-  max-width: 75%;
+  padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+  max-width: 30rem;
+  gap: 1.5rem;
   border-radius: 0.625rem;
 }
 .modal__title {
   font-size: 1.75rem;
 }
-.modal__triggers {
+.modal__desc {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.modal[open] {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.625rem;
-}
-.modal__button {
-  border: 2px solid #000000;
-  color: #000000;
-  background-color: transparent;
-  border-radius: 0.5rem;
-  min-width: 210px;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-.modal__button:hover {
-  background-color: #000000;
-  color: #ffffff;
 }
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 .form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.form__group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.form__group_horizontal {
+  flex-direction: row;
+}
+.form__group_center {
+  justify-content: center;
+}
+.form__label {
+  font-size: 1.125rem;
+}
+.form__input, .form__textarea {
+  padding: 0.625rem;
+  border: 1px solid #B3B3B3;
+  border-radius: 0.5rem;
+}
+.form__textarea {
+  resize: none;
+  min-height: 7.1875rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -774,9 +842,12 @@
   }
   /* Footer END */
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
   .testimonials__contacts {
     justify-content: center;
     text-align: center;
+  }
+  .modal {
+    margin: auto 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

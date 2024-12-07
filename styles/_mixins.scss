@@ -11,3 +11,11 @@
       font-display: swap;
     }
 }
+
+@mixin hovered() {
+  @media(hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

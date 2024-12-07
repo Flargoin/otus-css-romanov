@@ -10,9 +10,12 @@
         gap: 55px;
 
         &-link {
-            &:active,
-            &:hover {
+            &:active {
                 text-decoration: underline; 
+            }
+
+            @include hovered {
+                text-decoration: none;
             }
         }
     }

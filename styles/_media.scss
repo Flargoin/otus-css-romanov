@@ -368,9 +368,13 @@
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
     .testimonials__contacts {
         justify-content: center;
         text-align: center;
+    }
+
+    .modal {
+        margin: auto 1rem;
     }
 }

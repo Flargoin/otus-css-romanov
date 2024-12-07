@@ -33,12 +33,6 @@
     object-fit: cover;
 }
 
-.button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .link {
     text-decoration: none;
     color: inherit;
@@ -61,3 +55,4 @@
 
 @import './other/_section';
 @import './other/_title';
+@import './other/_button';

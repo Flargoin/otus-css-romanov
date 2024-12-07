@@ -32,7 +32,7 @@
                 </ul>
             </nav>
 
-            <button class="header__trigger button" onclick="window.modal.showModal()">
+            <button class="header__trigger button button_ico" onclick="window.modal.showModal()">
                 <img src="./icons/form-ico.svg" alt="Кнопка вызова модального окна">
             </button>
         </header>
@@ -296,18 +296,36 @@
         id="modal"
         class="modal"
     >
-        <form action="" class="form">
-            <h3 class="modal__title title">Get in touch</h3>
+        <h3 class="modal__title title">Get in touch</h3>
 
-            <p class="p">
-                Do you have any questions? Have something to say?
-                Don't be shy, write to us:
-            </p>
+        <p class="modal__desc p">
+            Do you have any questions? Have something to say?
+            Don't be shy, write to us:
+        </p>
 
-            <div class="modal__triggers">
-                <button class="modal__button button" type="button" onclick="window.modal.close()">Cancel</button>
-            </div>
-        </form>
+        <div class="modal__content">
+            <form action="#" method="post" class="form">
+                <div class="form__group">
+                    <label class="form__label" for="user-name">Name</label>
+                    <input class="form__input" id="user-name" type="text" name="user-name" placeholder="3+ Characters" minlength="3" autofocus required>
+                </div>
+    
+                <div class="form__group">
+                    <label class="form__label" for="user-email">E-mail</label>
+                    <input id="user-email" class="form__input" type="email" placeholder="name@email.com" pattern="/^\S+@\S+\.\S+$/" required>
+                </div>
+    
+                <div class="form__group">
+                    <label for="user-comment" class="form__label">Comment</label>
+                    <textarea id="user-comment" class="form__textarea" name="user-comment" placeholder="Your comment..." spellcheck></textarea>
+                </div>
+    
+                <div class="form__group form__group_horizontal form__group_center">
+                    <button class="button button_inline" type="button" onclick="window.modal.close()">Cancel</button>
+                    <button class="button button_dark" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
     </dialog>
     <!-- Modal END -->
 </body>
