@@ -159,6 +159,27 @@
   align-items: center;
   justify-content: space-between;
 }
+.header__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 1rem 0.5rem;
+  transition: background-color transform 0.4s ease-in-out;
+}
+.header__trigger i {
+  font-size: 25px;
+  transition: color 0.4s ease-in-out;
+}
+@media (hover: hover) {
+  .header__trigger:hover {
+    background-color: #000000;
+  }
+  .header__trigger:hover i {
+    color: #ffffff;
+  }
+}
 
 .logo {
   font-family: "Playfair Display", sans-serif;
@@ -517,6 +538,19 @@
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
+.modal::before {
+  content: "";
+  position: fixed;
+  display: block;
+  min-width: 32.5rem;
+  min-height: 36rem;
+  border: 2px solid #ffffff;
+  transform: rotate(2deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(2deg);
+  border-radius: 20px;
+}
 
 .form {
   width: 100%;
@@ -544,9 +578,52 @@
   border: 1px solid #B3B3B3;
   border-radius: 0.5rem;
 }
+.form__input {
+  width: 100%;
+  padding-right: 2.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.form__input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.form__input-group:focus-within .form__input-icon {
+  fill: #000000;
+}
+.form__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  fill: #868686;
+}
 .form__textarea {
+  padding-right: 2.5rem;
   resize: none;
+  width: 100%;
   min-height: 7.1875rem;
+}
+.form__textarea-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.form__textarea-group:focus-within .form__textarea-icon {
+  fill: #000000;
+}
+.form__textarea-icon {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  fill: #868686;
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

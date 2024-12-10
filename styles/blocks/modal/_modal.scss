@@ -23,4 +23,18 @@
         background-color: rgba(0,0,0,0.75);
     }
 
+
+    &::before {
+        content: "";
+        position: fixed;
+        display: block;
+        min-width: 32.5rem;
+        min-height: 36rem;
+        border: 2px solid #ffffff;
+        transform: rotate(2deg);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(2deg);
+        border-radius: 20px;
+    }
 }

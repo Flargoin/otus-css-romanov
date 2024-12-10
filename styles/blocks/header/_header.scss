@@ -5,6 +5,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &__trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        padding: 1rem 0.5rem;
+        transition: background-color transform $animation-time;
+
+        i {
+            font-size: 25px;
+            transition: color $animation-time;
+        }
+
+        @include hovered {
+            background-color: $site-main-color;
+
+            i {
+                color: $white-color;
+            }
+        }
+    }
 }
 
 @import '_logo';
