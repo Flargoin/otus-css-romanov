@@ -1,0 +1,49 @@
+/* Main colors */
+$white-color: #ffffff;
+$site-main-color: #000000;
+$site-secondary-color: #0D0D0D;
+$site-bg-color: #{$white-color};
+
+/* Main site vars */
+$site-ff: 'Roboto', sans-serif;
+$site-fs: 100%; /* 16px */
+$site-fw: 500;
+$site-lh: 1.2;
+
+/* Section vars */
+$section-padding-desc: 4.6875rem 0;
+$section-padding-mob: 2.5rem 0;
+
+/* Modal vars */
+$modal-title-fs: 1.75rem;
+$modal-desc-fs: 1.125rem;
+$modal-width: 30rem;
+$modal-border-radius: 0.625rem;
+$modal-padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+$modal-gap: 1.5rem;
+
+/* Input vars */
+$input-border-radius: 0.5rem;
+$input-border-line: 1px solid #B3B3B3;
+$input-padding: 0.625rem;
+
+/* label var */
+$label-fs: 1.125rem;
+
+/* textarea var */
+$textarea-height: 7.1875rem;
+
+/* Form vars */
+$form-gap: 1.5rem;
+$form-group-gap: 0.25rem;
+
+/* Buttons vars */
+$button-fs: 1.125rem;
+$button-padding: 0.6875rem 0;
+$button-border-default: 1px solid #{$site-main-color};
+$button-border-inline: 1px solid #B3B3B3;
+$button-border-radius: 0.5rem;
+$button-width: 13.125rem;
+
+/* transition var */
+$animation-time: 0.4s ease-in-out;

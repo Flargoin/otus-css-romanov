@@ -1,0 +1,39 @@
+.footer {
+    padding: 0 1rem;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white-color;
+    background-color: $site-secondary-color;
+    font-weight: 400;
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-link {
+            text-decoration: underline;
+            font-style: normal;
+            
+
+            &:last-child {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__product {
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+    }
+
+    &__logo {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+}

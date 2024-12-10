@@ -1,0 +1,22 @@
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__info {
+        margin: 0;
+
+        &-name {
+            text-transform: uppercase;
+        }
+        
+        &-text,
+        &-skills {
+            margin: 0;
+        
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+}

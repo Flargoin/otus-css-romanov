@@ -1,0 +1,26 @@
+.modal {
+    flex-direction: column;
+    border: none;
+    padding: $modal-padding;
+    max-width: $modal-width;
+    gap: $modal-gap;
+    border-radius: $modal-border-radius;
+
+    &__title {
+        font-size: $modal-title-fs;
+    }
+
+    &__desc {
+        font-size: $modal-desc-fs;
+        font-weight: 400;
+    }
+
+    &[open] {
+        display: flex;
+    }
+
+    &::backdrop {
+        background-color: rgba(0,0,0,0.75);
+    }
+
+}
