@@ -1,10 +1,28 @@
 .modal {
-    flex-direction: column;
-    border: none;
-    padding: $modal-padding;
-    max-width: $modal-width;
-    gap: $modal-gap;
-    border-radius: $modal-border-radius;
+
+    &__inner {
+        // position: relative;
+        flex-direction: column;
+        border: none;
+        padding: $modal-padding;
+        max-width: $modal-width;
+        min-height: $modal-height;
+        height: $modal-height;
+        justify-content: space-between;
+        border-radius: $modal-border-radius;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            border: 2px solid #fff;
+            border-radius: $modal-border-radius;
+            transform: rotate(2deg);
+            z-index: -1;
+        }
+    }
 
     &__title {
         font-size: $modal-title-fs;
@@ -15,26 +33,21 @@
         font-weight: 400;
     }
 
-    &[open] {
+    &:has(.modal__inner[open]) {
+        position: absolute;
+        inset: 0;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        .modal__inner {
+            display: flex;
+        }
     }
 
-    &::backdrop {
-        background-color: rgba(0,0,0,0.75);
-    }
-
-
-    &::before {
-        content: "";
-        position: fixed;
-        display: block;
-        min-width: 32.5rem;
-        min-height: 36rem;
-        border: 2px solid #ffffff;
-        transform: rotate(2deg);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(2deg);
-        border-radius: 20px;
+    &:not(:has(.modal__inner[open])) {
+        z-index: 0;
     }
 }

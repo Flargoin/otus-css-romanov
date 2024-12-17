@@ -15,7 +15,7 @@
     color: $site-main-color;
     box-sizing: border-box;
 
-    &:has(.modal[open]) {
+    &:has(.modal__inner[open]) {
         overflow: hidden;
         height: 100vh;
     }
