@@ -30,8 +30,66 @@
         border-radius: $input-border-radius;
     }
 
+    &__input {
+        width: 100%;
+        padding-right: 2.5rem;
+        transition: all $animation-time;
+        
+        &-group {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+
+            &:focus-within {
+                .form__input-icon {
+                    fill: $site-main-color;
+                }
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            right: 0.5rem;
+            transform: translateY(-50%);
+            fill: #868686;
+        }
+
+
+    }
+
     &__textarea {
+        padding-right: 2.5rem;
         resize: none;
+        width: 100%;
         min-height: $textarea-height;
+
+        &-group {
+            position: relative;
+            display: flex;
+            width: 100%;
+
+            &:focus-within {
+                .form__textarea-icon {
+                    fill: $site-main-color;
+                }
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            top: 1rem;
+            right: 0.5rem;
+            transform: translateY(-50%);
+            fill: #868686;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 }
