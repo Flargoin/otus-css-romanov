@@ -30,7 +30,8 @@
         border-radius: $input-border-radius;
     }
 
-    &__input {
+    &__input,
+    &__textarea {
         width: 100%;
         padding-right: 2.5rem;
         transition: all $animation-time;
@@ -42,7 +43,7 @@
             width: 100%;
 
             &:focus-within {
-                .form__input-icon {
+                svg {
                     fill: $site-main-color;
                 }
             }
@@ -52,37 +53,26 @@
             position: absolute;
             top: 50%;
             right: 0.5rem;
+            transition: fill $animation-time;
             transform: translateY(-50%);
-            fill: #868686;
+            fill: $form-icon-fill;
         }
 
-
+        @include isFocus;
+        @include isHover();
+        @include isActive;
+        @include isValidInput;
+        @include isInvalidInput;
+        @include placeholderStyles;
     }
 
     &__textarea {
-        padding-right: 2.5rem;
+        padding: $textarea-padding;
         resize: none;
-        width: 100%;
         min-height: $textarea-height;
 
-        &-group {
-            position: relative;
-            display: flex;
-            width: 100%;
-
-            &:focus-within {
-                .form__textarea-icon {
-                    fill: $site-main-color;
-                }
-            }
-        }
-
         &-icon {
-            position: absolute;
             top: 1rem;
-            right: 0.5rem;
-            transform: translateY(-50%);
-            fill: #868686;
         }
     }
 

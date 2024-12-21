@@ -7,16 +7,11 @@
     padding: $button-padding;
     border-radius: $button-border-radius;
     min-width: $button-width;
-    transition: all $animation-time;
+    transition: border $animation-time, color $animation-time, background-color $animation-time, box-shadow $animation-time, outline $animation-time, transform $animation-time;
 
     &_inline {
         border: $button-border-inline;
         color: $site-main-color;
-
-        @include hovered {
-            border: $button-border-default;
-            box-shadow: 0 0 4px rgba($site-main-color, 0.8);
-        }
     }
 
     &_dark {
@@ -24,7 +19,7 @@
         background-color: $site-main-color;
         color: $white-color;
 
-        @include hovered {
+        @include isHover {
             background-color: rgba($site-main-color, 0.8);
         }
     }
@@ -32,8 +27,15 @@
     &_ico {
         min-width: max-content;
 
-        @include hovered {
+        @include isHover {
             transform: scale(0.8);
         }
     }
+
+    @include isFocus;
+    @include isHover {
+        border: $button-border-default;
+        box-shadow: 0 0 4px rgba($site-main-color, 0.8);
+    }
+    @include isActive;
 }

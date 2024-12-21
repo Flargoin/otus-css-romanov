@@ -27,16 +27,20 @@ $modal-gap: 1.5rem;
 $input-border-radius: 0.5rem;
 $input-border-line: 1px solid #B3B3B3;
 $input-padding: 0.625rem;
+$input-border-succes-color: #00b300;
+$input-border-error-color: #ff2b2b;
 
 /* label var */
 $label-fs: 1.125rem;
 
 /* textarea var */
+$textarea-padding: 0.625rem 2.5rem 0.625rem 0.625rem;
 $textarea-height: 7.1875rem;
 
 /* Form vars */
 $form-gap: 1.5rem;
 $form-group-gap: 0.25rem;
+$form-icon-fill: #868686;
 
 /* Buttons vars */
 $button-fs: 1.125rem;
