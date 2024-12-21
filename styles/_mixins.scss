@@ -12,10 +12,87 @@
     }
 }
 
-@mixin hovered() {
+@mixin isHover() {
   @media(hover: hover) {
     &:hover {
       @content;
+    }
+  }
+}
+
+@mixin isFocus() {
+  &:focus {
+    outline : none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $site-main-color;
+    outline-offset: 2px;
+  }
+}
+
+@mixin isActiveInput() {
+  &:active {
+    outline: none;
+    background-color: rgba($site-main-color, 0.2);
+  }
+}
+
+@mixin isValidInput() {
+  &:valid {
+    border-color: $input-border-succes-color;
+
+    & + svg {
+      fill: $input-border-succes-color;
+    }
+  }
+}
+
+@mixin isInvalidInput() {
+  &:invalid {
+    border-color: $input-border-error-color;
+
+    & + svg {
+      fill: $input-border-error-color;
+    }
+  }
+}
+
+@mixin placeholderStyles() {
+  &::placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &::-moz-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:-moz-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:placeholder-shown {
+    border-color: $site-main-color;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    & + svg {
+      fill: $form-icon-fill;
     }
   }
 }

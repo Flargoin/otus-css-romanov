@@ -20,7 +20,7 @@
             transition: color $animation-time;
         }
 
-        @include hovered {
+        @include isHover {
             background-color: $site-main-color;
 
             i {
