@@ -33,7 +33,7 @@
                 </ul>
             </nav>
 
-            <button class="header__trigger button button_ico" onclick="window.modal.show()">
+            <button class="header__trigger button button_ico" onclick="window.modal.showModal()">
                 <i class="fa-regular fa-comment-dots"></i>
             </button>
         </header>
@@ -293,11 +293,13 @@
     <!-- Footer END -->
 
     <!-- Modal START -->
-    <div class="modal">
-        <dialog 
-            id="modal"
-            class="modal__inner"
-        >
+
+    <dialog 
+        id="modal"
+        class="modal"
+    >
+
+        <div class="modal__inner">
             <h3 class="modal__title title">Get in touch</h3>
 
             <p class="modal__desc p">
@@ -347,8 +349,9 @@
                     </div>
                 </form>
             </div>
-        </dialog>
-    </div>
+        </div>
+    </dialog>
+
     <!-- Modal END -->
 </body>
 </html>

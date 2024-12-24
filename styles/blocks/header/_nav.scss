@@ -15,7 +15,7 @@
             }
 
             @include isHover {
-                text-decoration: none;
+                text-decoration: underline;
             }
         }
     }

@@ -28,6 +28,7 @@
         padding: $input-padding;
         border: $input-border-line;
         border-radius: $input-border-radius;
+        font-size: $site-fs;
     }
 
     &__input,
@@ -53,16 +54,40 @@
             position: absolute;
             top: 50%;
             right: 0.5rem;
-            transition: fill $animation-time;
+            transition: fill $animation-time, transform $animation-time;
             transform: translateY(-50%);
             fill: $form-icon-fill;
         }
 
-        @include isFocus;
-        @include isHover();
-        @include isActive;
-        @include isValidInput;
-        @include isInvalidInput;
+
+        @include isFocus {
+            border-radius: $input-border-radius;
+            outline: 2px solid rgba($site-main-color, 0.6);
+            outline-offset: 2px;
+            filter: drop-shadow(2px 0px 4px rgba($site-main-color, 0.5));
+        };
+
+        @include isValidInput {
+            border-color: $input-border-succes-color;
+
+            & + svg {
+                fill: $input-border-succes-color;
+            }
+        };
+
+        @include isInvalidInput {
+            border-color: $input-border-error-color;
+
+            & + svg {
+                fill: $input-border-error-color;
+            }
+        };
+
+        @include isActive {
+            outline: none;
+            background-color: rgba($site-main-color, 0.2);
+        };
+        
         @include placeholderStyles;
     }
 

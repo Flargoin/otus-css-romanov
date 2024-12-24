@@ -26,35 +26,25 @@
   }
 
   &:focus-visible {
-    outline: 2px solid $site-main-color;
-    outline-offset: 2px;
+    @content;
   }
 }
 
-@mixin isActiveInput() {
+@mixin isActive() {
   &:active {
-    outline: none;
-    background-color: rgba($site-main-color, 0.2);
+    @content;
   }
 }
 
 @mixin isValidInput() {
   &:valid {
-    border-color: $input-border-succes-color;
-
-    & + svg {
-      fill: $input-border-succes-color;
-    }
+    @content;
   }
 }
 
 @mixin isInvalidInput() {
   &:invalid {
-    border-color: $input-border-error-color;
-
-    & + svg {
-      fill: $input-border-error-color;
-    }
+    @content;
   }
 }
 
@@ -94,5 +84,12 @@
     & + svg {
       fill: $form-icon-fill;
     }
+
+    @include isHover {
+      & + svg {
+            transform: translateY(-50%) scale(1.1);
+            fill: $site-main-color;
+      }
+    };
   }
 }

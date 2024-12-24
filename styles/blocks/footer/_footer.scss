@@ -21,6 +21,14 @@
             &:last-child {
                 text-transform: uppercase;
             }
+
+            @include isFocus {
+                outline: 2px solid $white-color;
+            };
+        
+            @include isActive {
+                color: rgba($white-color, 0.5);
+            }
         }
     }
 
@@ -30,6 +38,18 @@
 
     &__text {
         font-size: 1.125rem;
+
+        @include isFocus {
+            outline: 2px solid $white-color;
+        };
+    
+        @include isHover {
+            color: rgba($white-color, 0.5);
+        }
+    
+        @include isActive {
+            color: rgba($white-color, 0.5);
+        }
     }
 
     &__logo {

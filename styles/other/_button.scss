@@ -8,6 +8,20 @@
     border-radius: $button-border-radius;
     min-width: $button-width;
     transition: border $animation-time, color $animation-time, background-color $animation-time, box-shadow $animation-time, outline $animation-time, transform $animation-time;
+    
+    @include isFocus {
+        outline: 2px solid $site-main-color;
+    };
+
+    @include isHover {
+        border: $button-border-default;
+        box-shadow: 0 0 4px rgba($site-main-color, 0.8);
+    }
+
+    @include isActive {
+        outline: none;
+        background-color: rgba($site-main-color, 0.2);
+    };
 
     &_inline {
         border: $button-border-inline;
@@ -28,14 +42,8 @@
         min-width: max-content;
 
         @include isHover {
+            border: none;
             transform: scale(0.8);
         }
     }
-
-    @include isFocus;
-    @include isHover {
-        border: $button-border-default;
-        box-shadow: 0 0 4px rgba($site-main-color, 0.8);
-    }
-    @include isActive;
 }
