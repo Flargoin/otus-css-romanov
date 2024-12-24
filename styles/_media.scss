@@ -376,5 +376,11 @@
 
     .modal__inner {
         margin: auto 1rem;
+
+        &::after {
+            top: -0.5%;
+            left: 2.5%;
+            width: 93%;
+        }
     }
 }

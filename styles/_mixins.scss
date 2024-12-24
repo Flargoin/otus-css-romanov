@@ -12,10 +12,84 @@
     }
 }
 
-@mixin hovered() {
+@mixin isHover() {
   @media(hover: hover) {
     &:hover {
       @content;
     }
+  }
+}
+
+@mixin isFocus() {
+  &:focus {
+    outline : none;
+  }
+
+  &:focus-visible {
+    @content;
+  }
+}
+
+@mixin isActive() {
+  &:active {
+    @content;
+  }
+}
+
+@mixin isValidInput() {
+  &:valid {
+    @content;
+  }
+}
+
+@mixin isInvalidInput() {
+  &:invalid {
+    @content;
+  }
+}
+
+@mixin placeholderStyles() {
+  &::placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &::-moz-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:-moz-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($site-main-color, 0.4);
+    font-size: $site-fs;
+  }
+
+  &:placeholder-shown {
+    border-color: $site-main-color;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    & + svg {
+      fill: $form-icon-fill;
+    }
+
+    @include isHover {
+      & + svg {
+            transform: translateY(-50%) scale(1.1);
+            fill: $site-main-color;
+      }
+    };
   }
 }
