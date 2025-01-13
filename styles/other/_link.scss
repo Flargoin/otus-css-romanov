@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: color $animation-time;
+    border-radius: 0.5rem;
+
+    @include isFocus {
+        outline: 2px solid $site-main-color;
+    };
+
+    @include isHover {
+        color: rgba($site-main-color, 0.5);
+    }
+
+    @include isActive {
+        color: rgba($site-main-color, 0.5);
+    }
+}
