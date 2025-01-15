@@ -14,8 +14,7 @@
     font-weight: $site-fw;
     color: $site-main-color;
     box-sizing: border-box;
-
-    &:has(.modal__inner[open]) {
+    &:has(.modal[open]) {
         overflow: hidden;
         height: 100vh;
     }

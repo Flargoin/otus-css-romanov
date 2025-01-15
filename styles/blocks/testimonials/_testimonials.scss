@@ -17,10 +17,6 @@
     &__photo {
         max-width: 450px;
         grid-column: span 4;
-
-        img {
-            @extend .image;
-        }
     }
 
     &__body {
@@ -34,11 +30,6 @@
 
         &-blockquote {
             font-size: 2rem; /* 32px */
-        }
-
-        &-photo img {
-           width: 100%;
-           object-fit: cover;
         }
     }
 }

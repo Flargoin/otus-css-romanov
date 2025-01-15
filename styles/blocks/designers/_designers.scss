@@ -17,11 +17,8 @@
         &-item {
             min-width: 335px;
 
-            & .img {
+            & .image {
                 max-height: 440px;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
             }
 
             &:first-child {
@@ -32,7 +29,7 @@
                     margin-right: 85px;
                 }
 
-                .img{
+                .image{
                     max-height: 540px;
                 }
             }
