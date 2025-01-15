@@ -1069,4 +1069,7 @@
     left: 2.5%;
     width: 93%;
   }
+  .form {
+    gap: 0.75rem;
+  }
 }/*# sourceMappingURL=main.css.map */
