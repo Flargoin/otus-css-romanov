@@ -893,7 +893,7 @@
     margin-top: -4.6875rem;
     align-items: flex-start;
     height: calc(100dvh - 75px);
-    background-image: url("/img/banner/banner-mob.png");
+    background-image: url("../img/banner/banner-mob.png");
   }
   .banner__content {
     max-width: unset;
