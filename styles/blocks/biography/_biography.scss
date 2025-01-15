@@ -13,8 +13,9 @@
         height: auto;
 
         &-photo {
+            width: 100%;
             .image {
-                min-width: 571px;
+                min-width: 100%;
                 min-height: 840px;
             }
         }

@@ -281,8 +281,11 @@
   width: 49%;
   height: auto;
 }
+.biography__head-photo {
+  width: 100%;
+}
 .biography__head-photo .image {
-  min-width: 571px;
+  min-width: 100%;
   min-height: 840px;
 }
 .biography__body {
@@ -466,7 +469,6 @@
 .strong-points__list-item .image {
   max-height: 555px;
   min-height: 555px;
-  min-width: 335px;
 }
 
 .strengths {
@@ -922,6 +924,11 @@
   }
   .biography__head-photo {
     width: 100%;
+    height: 400px;
+  }
+  .biography__head-photo .image {
+    min-width: 100%;
+    min-height: 100%;
   }
   .biography__body {
     padding: 0 1rem;
