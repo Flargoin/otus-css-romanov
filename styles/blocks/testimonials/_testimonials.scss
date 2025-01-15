@@ -17,6 +17,11 @@
     &__photo {
         max-width: 450px;
         grid-column: span 4;
+    
+        & .image {
+            min-height: 450px;
+            min-height: 760px;
+        }
     }
 
     &__body {
@@ -27,6 +32,13 @@
         align-self: center;
         gap: 35px;
         grid-column: 9/11;
+
+        &-photo {
+            .image {
+                min-width: 221px;
+                min-height: 333px;
+            }
+        }
 
         &-blockquote {
             font-size: 2rem; /* 32px */

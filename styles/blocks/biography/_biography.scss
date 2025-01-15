@@ -11,6 +11,13 @@
         display: flex;
         width: 49%;
         height: auto;
+
+        &-photo {
+            .image {
+                min-width: 571px;
+                min-height: 840px;
+            }
+        }
     }
 
     &__body {

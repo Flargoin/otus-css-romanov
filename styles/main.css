@@ -57,10 +57,12 @@
 }
 
 .image {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: gray;
 }
 
 .list {
@@ -279,6 +281,10 @@
   width: 49%;
   height: auto;
 }
+.biography__head-photo .image {
+  min-width: 571px;
+  min-height: 840px;
+}
 .biography__body {
   margin: auto 0;
   margin-left: 3.125rem;
@@ -338,6 +344,7 @@
 }
 .designers__list-item .image {
   max-height: 440px;
+  min-height: 440px;
 }
 .designers__list-item:first-child {
   min-width: 572px;
@@ -348,6 +355,7 @@
 }
 .designers__list-item:first-child .image {
   max-height: 540px;
+  min-height: 540px;
 }
 
 .person {
@@ -405,6 +413,10 @@
   max-width: 450px;
   grid-column: span 4;
 }
+.testimonials__photo .image {
+  min-height: 450px;
+  min-height: 760px;
+}
 .testimonials__body {
   text-align: center;
   display: flex;
@@ -413,6 +425,10 @@
   align-self: center;
   gap: 35px;
   grid-column: 9/11;
+}
+.testimonials__body-photo .image {
+  min-width: 221px;
+  min-height: 333px;
 }
 .testimonials__body-blockquote {
   font-size: 2rem; /* 32px */
@@ -449,6 +465,8 @@
 }
 .strong-points__list-item .image {
   max-height: 555px;
+  min-height: 555px;
+  min-width: 335px;
 }
 
 .strengths {
